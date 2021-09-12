@@ -6,19 +6,23 @@ block content
       div.pure-u-1
         h2 Login to Mom's Library
 
-    div.pure-g.formPage#loginUser
-      div.pure-u-1.formPage
-        div
-          label(for="user_Login") Username
-          input.center#user_Login(name="user[login]" type="text")
-
-    div.pure-g.formPage#loginPassword
-      div.pure-u-1.formPage
-        div
-          label(for="user_Password") Password
-          input#user_Password.center(name="user[password]" type="password")
-
-    div.pure-g
-      div.pure-u-1
-        a.loginButton.navText.center(href="/admin") Login
-          //img.pageButton(src="/images/ButtonLogin.svg" style="width: 100px;") // Until I get a better button image
+  div.pure-g
+    div.pure-u-1-3
+    div.pure-u-2-3
+      form.pure-form.pure-form-aligned
+        fieldset
+          div.pure-control-group
+            label(for="userEmail") Email Address
+            input#userEmail.pure-input-rounded(type="email" placeholder="User@Email.com" required="" name="user[email]")
+          div.pure-control-group
+            label(for="userPassword") Password
+            input#userPassword.pure-input-rounded(type="password" placeholder="Password123" required="" name="user[password]")
+          div.pure-controls
+            button.pure-button.pure-button-primary(type="submit") Submit
+  
+  // This will be removed when login functionality is built
+  div.pure-g
+    div.pure-u-2-5
+    div.pure-u-1-5.center
+      a(href="/admin") Login
+    div.pure-u-2-5

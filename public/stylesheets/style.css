@@ -21,9 +21,9 @@ input {
   display: block;
   padding: 5px 0;
   margin: 0 auto;
-  width: 290px;
-  text-align: left !important;
+  text-align: left;
 }
+
 label {
   margin-right: 20px;
   font-family: 'BerlinSans', sans-serif;
@@ -39,7 +39,8 @@ label {
 }
 .navButton {
   margin: 0 auto;
-  display: block;
+  display: inline-block;
+  text-align:center;
   width: 125px;
   min-width: 100px;
   height: 5em;
@@ -69,15 +70,10 @@ label {
   margin-left: auto;
   margin-right: auto;
 }
-.bborder {
-  border: 3px dotted blue;
-}
-.gborder {
-  border: 3px dotted green;
-}
 
 .backButton {
   text-decoration: underline;
+  display:inline-block;
 
 }
 .loginButton {
